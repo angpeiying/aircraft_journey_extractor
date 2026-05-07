@@ -1,0 +1,25 @@
+{
+  "source_file": "05_all_handwritten_with_symbol.png",
+  "aircraft_model": "Airbus A320",
+  "registration_number": "9M-AHE",
+  "departure_airport": null,
+  "arrival_airport": "PEN",
+  "crew": 5,
+  "fuel_on_board": "18k",
+  "load": 128,
+  "defect_message": "H+ au hiupuow yesy.\nfau|f m5q\ndisp",
+  "raw_ocr": {
+    "aircraft_model": "Airbus A320",
+    "registration_number": "9M-AHE",
+    "departure_airport": "BK1",
+    "arrival_airport": "PeN",
+    "crew": "5",
+    "fuel": "18k",
+    "load": "128",
+    "defect_message": "H+ au hiupuow yesy.\nfau|f m5q\ndisp"
+  },
+  "warnings": [
+    "Missing or low-confidence field: departure_airport",
+    "Defect message present \u2014 manual review recommended"
+  ]
+}

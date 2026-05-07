@@ -1,0 +1,24 @@
+{
+  "source_file": "04_all_handwritten.png",
+  "aircraft_model": "Airbus A330-300",
+  "registration_number": "9M-MTK",
+  "departure_airport": "KUL",
+  "arrival_airport": "CQK",
+  "crew": null,
+  "fuel_on_board": "36k",
+  "load": 265,
+  "defect_message": "seat l4c recine\nMech inop\nmelappliee",
+  "raw_ocr": {
+    "aircraft_model": "Airbus A330-300",
+    "registration_number": "9M-mtK",
+    "departure_airport": "KuL",
+    "arrival_airport": "cqK",
+    "crew": "",
+    "fuel": "36K",
+    "load": "265",
+    "defect_message": "seat l4c recine\nMech inop\nmelappliee"
+  },
+  "warnings": [
+    "Defect message present \u2014 manual review recommended"
+  ]
+}

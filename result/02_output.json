@@ -1,0 +1,24 @@
+{
+  "source_file": "02_with_defect.png",
+  "aircraft_model": "Airbus A320",
+  "registration_number": "9M-XX1",
+  "departure_airport": "SIN",
+  "arrival_airport": "KUL",
+  "crew": 4,
+  "fuel_on_board": "13k",
+  "load": 160,
+  "defect_message": "Jn^servceape \nSperative.\nontro] qnd[ acess\nf 0U^d",
+  "raw_ocr": {
+    "aircraft_model": "Airbus A320",
+    "registration_number": "9M-XX1",
+    "departure_airport": "SIN",
+    "arrival_airport": "KuL",
+    "crew": "4",
+    "fuel": "13k",
+    "load": "160",
+    "defect_message": "Jn^servceape \nSperative.\nontro] qnd[ acess\nf 0U^d"
+  },
+  "warnings": [
+    "Defect message present \u2014 manual review recommended"
+  ]
+}

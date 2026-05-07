@@ -1,0 +1,119 @@
+[
+  {
+    "source_file": "01_clean_typed.png",
+    "aircraft_model": "Airbus A320",
+    "registration_number": "9M-XX1",
+    "departure_airport": "PEN",
+    "arrival_airport": "KUL",
+    "crew": 3,
+    "fuel_on_board": "15k",
+    "load": 180,
+    "defect_message": null,
+    "raw_ocr": {
+      "aircraft_model": "Airbus A320",
+      "registration_number": "9M-XX1",
+      "departure_airport": "PEN",
+      "arrival_airport": "KuL",
+      "crew": "3",
+      "fuel": "15K",
+      "load": "180",
+      "defect_message": ""
+    },
+    "warnings": []
+  },
+  {
+    "source_file": "02_with_defect.png",
+    "aircraft_model": "Airbus A320",
+    "registration_number": "9M-XX1",
+    "departure_airport": "SIN",
+    "arrival_airport": "KUL",
+    "crew": 4,
+    "fuel_on_board": "13k",
+    "load": 160,
+    "defect_message": "Jn^servceape \nSperative.\nontro] qnd[ acess\nf 0U^d",
+    "raw_ocr": {
+      "aircraft_model": "Airbus A320",
+      "registration_number": "9M-XX1",
+      "departure_airport": "SIN",
+      "arrival_airport": "KuL",
+      "crew": "4",
+      "fuel": "13k",
+      "load": "160",
+      "defect_message": "Jn^servceape \nSperative.\nontro] qnd[ acess\nf 0U^d"
+    },
+    "warnings": [
+      "Defect message present \u2014 manual review recommended"
+    ]
+  },
+  {
+    "source_file": "03_missing_fields.png",
+    "aircraft_model": "Airbus A320",
+    "registration_number": "9M-XX1",
+    "departure_airport": "KUL",
+    "arrival_airport": "PEN",
+    "crew": null,
+    "fuel_on_board": null,
+    "load": 162,
+    "defect_message": null,
+    "raw_ocr": {
+      "aircraft_model": "Airbus A320",
+      "registration_number": "9M-XX1",
+      "departure_airport": "Ku L",
+      "arrival_airport": "PEN",
+      "crew": "",
+      "fuel": "",
+      "load": "162",
+      "defect_message": ""
+    },
+    "warnings": []
+  },
+  {
+    "source_file": "04_all_handwritten.png",
+    "aircraft_model": "Airbus A330-300",
+    "registration_number": "9M-MTK",
+    "departure_airport": "KUL",
+    "arrival_airport": "CQK",
+    "crew": null,
+    "fuel_on_board": "36k",
+    "load": 265,
+    "defect_message": "seat l4c recine\nMech inop\nmelappliee",
+    "raw_ocr": {
+      "aircraft_model": "Airbus A330-300",
+      "registration_number": "9M-mtK",
+      "departure_airport": "KuL",
+      "arrival_airport": "cqK",
+      "crew": "",
+      "fuel": "36K",
+      "load": "265",
+      "defect_message": "seat l4c recine\nMech inop\nmelappliee"
+    },
+    "warnings": [
+      "Defect message present \u2014 manual review recommended"
+    ]
+  },
+  {
+    "source_file": "05_all_handwritten_with_symbol.png",
+    "aircraft_model": "Airbus A320",
+    "registration_number": "9M-AHE",
+    "departure_airport": null,
+    "arrival_airport": "PEN",
+    "crew": 5,
+    "fuel_on_board": "18k",
+    "load": 128,
+    "defect_message": "H+ au hiupuow yesy.\nfau|f m5q\ndisp",
+    "raw_ocr": {
+      "aircraft_model": "Airbus A320",
+      "registration_number": "9M-AHE",
+      "departure_airport": "BK1",
+      "arrival_airport": "PeN",
+      "crew": "5",
+      "fuel": "18k",
+      "load": "128",
+      "defect_message": "H+ au hiupuow yesy.\nfau|f m5q\ndisp"
+    },
+    "warnings": [
+      "Missing or low-confidence field: departure_airport",
+      "Defect message present \u2014 manual review recommended"
+    ]
+  }
+]

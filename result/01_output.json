@@ -1,0 +1,22 @@
+{
+  "source_file": "01_clean_typed.png",
+  "aircraft_model": "Airbus A320",
+  "registration_number": "9M-XX1",
+  "departure_airport": "PEN",
+  "arrival_airport": "KUL",
+  "crew": 3,
+  "fuel_on_board": "15k",
+  "load": 180,
+  "defect_message": null,
+  "raw_ocr": {
+    "aircraft_model": "Airbus A320",
+    "registration_number": "9M-XX1",
+    "departure_airport": "PEN",
+    "arrival_airport": "KuL",
+    "crew": "3",
+    "fuel": "15K",
+    "load": "180",
+    "defect_message": ""
+  },
+  "warnings": []
+}

@@ -1,0 +1,22 @@
+{
+  "source_file": "03_missing_fields.png",
+  "aircraft_model": "Airbus A320",
+  "registration_number": "9M-XX1",
+  "departure_airport": "KUL",
+  "arrival_airport": "PEN",
+  "crew": null,
+  "fuel_on_board": null,
+  "load": 162,
+  "defect_message": null,
+  "raw_ocr": {
+    "aircraft_model": "Airbus A320",
+    "registration_number": "9M-XX1",
+    "departure_airport": "Ku L",
+    "arrival_airport": "PEN",
+    "crew": "",
+    "fuel": "",
+    "load": "162",
+    "defect_message": ""
+  },
+  "warnings": []
+}

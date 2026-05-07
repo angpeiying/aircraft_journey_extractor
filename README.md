@@ -21,6 +21,18 @@ This prototype uses **PaddleOCR** (`paddleocr==2.9.1`) with **OpenCV** preproces
 6. Normalise raw OCR text per field (airport codes, integers, fuel strings, registration).
 7. Emit structured JSON with `warnings` for missing required fields or defect messages.
 
+### Why PaddleOCR over Tesseract?
+
+| | Tesseract + OpenCV | PaddleOCR |
+|---|---|---|
+| Accuracy on clean print | Good | Excellent |
+| Accuracy on degraded scans | Poor | Good |
+| Handwriting | Very poor | Moderate |
+| No API key / fully local | Yes | Yes |
+| GPU acceleration | No | Optional |
+| Confidence scores per detection | No | Yes |
+| Orientation correction | Manual | Built-in (`use_angle_cls=True`) |
+
 ### Key Design Choices
 - **ROI-based extraction** — each field is defined as a fraction of image dimensions, making the extractor layout-aware without training a custom model.
 - **Dual layout presets** (`LAYOUT_GENERATED` / `LAYOUT_ORIGINAL`) — auto-selected by aspect ratio so the same script handles both synthetic test images and real scanned forms.
@@ -47,16 +59,6 @@ python extractor.py sample.png --out output.json
 Multiple forms:
 ```bash
 python extractor.py form1.png form2.png form3.png --out output.json
-```
-
-## Test Results (4 synthetic test images)
-
-Running against the images in `data/`:
-
-```bash
-python extractor.py data/01_clean_typed.png data/02_with_defect.png \
-  data/03_missing_fields.png data/04_all_handwritten.png \
-  --out result/test_results.json
 ```
 
 ## JSON Output (sample)
